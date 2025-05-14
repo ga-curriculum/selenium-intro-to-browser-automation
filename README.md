@@ -1,21 +1,22 @@
 <h1>
   <span class="prefix"></span>
-  <span class="headline">[tktk Headline]</span>
+  <span class="headline">Introduction to Selenium</span>
 </h1>
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+This module introduces learners to Selenium, a powerful open-source tool for automating web browsers. Students will walk through installing Selenium, setting up a basic test environment in Python, and writing their first automation script that opens a browser and navigates to a webpage. The emphasis is on setup clarity, tool familiarity, and confidence using Selenium's basic functionality. Future modules will build on this with more advanced test actions, element targeting, waits, and best practices.
 
 ## Content
 
-| Lesson | Est. Delivery Time | Skills |
-| ------ |:------------------:| ------ |
-| [Setup](./setup/README.md)                          | -- | Set up the development environment. |
-| [Concepts](./concepts/README.md)                    | -- | tktk Skills to cover                |
-| [tktk Microlesson Name](./microlesson-01/README.md) | -- | tktk Skills to cover                |
-| [tktk Microlesson Name](./microlesson-02/README.md) | -- | tktk Skills to cover                |
-| **Total content**                                   | -- |                                     |
+| Lesson                                                                                                   | Est. Delivery Time | Skills                                                                                                         |
+| -------------------------------------------------------------------------------------------------------- | :----------------: | -------------------------------------------------------------------------------------------------------------- |
+| [Selenium's Role in Testing](./seleniums-role-in-testing/README.md)                                      |       5 min        | Describe what Selenium is and what it's used for in professional testing workflows.                            |
+| [Setup](./setup/README.md)                                                                               |       30 min       | Install Selenium and the required web driver for Chrome.                                                       |
+| [Writing Your First Selenium Script](./writing-your-first-selenium-script/README.md)                     |       15 min       | Write a basic Python script that opens a browser and visits a URL using Selenium.                              |
+| [Anatomy of a Selenium Script](./anatomy-of-a-selenium-script/README.md)                                 |       25 min       | Understand the structure of a simple Selenium script and how to build on it by interacting with page elements. |
+| [Inspecting Web Elements with Chrome DevTools](./inspecting-web-elements-with-chrome-devtools/README.md) |       15 min       | Use Chrome DevTools to inspect elements and relate them to Selenium interactions.                              |
+| **Total content**                                                                                        |       90 min       |                                                                                                                |
 
 ## References
 
@@ -25,32 +26,13 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ### Prerequisites
 
-- tktk
-- tktk
-- tktk
-
-### Starter code
-
-tktk If there is not a starter code repo that students will use to start this lesson, then this section and all of its content should be removed.
-
-🟢 [Starter code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
-
-### Solution code
-
-tktk If there is not solution code related to this module this section and all of its content should be removed.
-
-🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/tktk)
-
-### Deployed site
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](https://generalassemb.ly/tktk)
+- Pre-Selenium: The DOM Tree
+- Pre-Selenium: Dynamic Content with JavaScript
 
 ### Course landing pages
 
-- [tktk-course-acronym - tktk Course Full Name](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/tktk-course-acronym.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/fallback.html)
+- [PTR - Python Testing & Reliability](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/introduction-to-selenium/canvas-landing-pages/ptr.html)
+- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/introduction-to-selenium/canvas-landing-pages/fallback.html)
 
 ### Resources
 

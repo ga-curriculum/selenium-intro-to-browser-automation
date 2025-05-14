@@ -2,6 +2,13 @@ import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/univer
 
 // Add microlessons here, in the order they should be delivered
 
+seleniumsRoleInTesting = new Template.Microlesson {
+  friendlyName = "Selenium's Role in Testing"
+  dirName = "seleniums-role-in-testing"
+  type = "Content"
+  videoUrl = ""
+}
+
 setup = new Template.Microlesson {
   friendlyName = "Setup"
   dirName = "setup"
@@ -9,23 +16,24 @@ setup = new Template.Microlesson {
   videoUrl = ""
 }
 
-concepts = new Template.Microlesson {
-  friendlyName = "Concepts"
-  dirName = "concepts"
+writingYourFirstSeleniumScript = new Template.Microlesson {
+  friendlyName = "Writing Your First Selenium Script"
+  dirName = "writing-your-first-selenium-script"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson01 = new Template.Microlesson {
-  friendlyName = "Microlesson 01"
-  dirName = "microlesson-01"
+anatomyOfASeleniumScript = new Template.Microlesson {
+  friendlyName = "Anatomy of a Selenium Script"
+  dirName = "anatomy-of-a-selenium-script"
   type = "Content"
   videoUrl = ""
 }
 
-microlesson02 = new Template.Microlesson {
-  friendlyName = "Microlesson 02"
-  dirName = "microlesson-02"
+inspectingWebElementsWithChromeDevtools = new Template.Microlesson {
+  friendlyName = "Inspecting Web Elements with Chrome DevTools"
+  dirName = "inspecting-web-elements-with-chrome-devtools"
   type = "Content"
   videoUrl = ""
 }
+
