@@ -41,7 +41,7 @@ Here’s how you typically create a new Chrome browser session:
 driver = webdriver.Chrome()
 
 # If you need to specify the path to chromedriver:
-chromedriver_path = "/Users/laurenperez/chromedriver-mac-arm64/chromedriver"
+chromedriver_path = "/Users/username/chromedriver-mac-arm64/chromedriver"
 
 service = Service(executable_path=chromedriver_path)
 driver = webdriver.Chrome(service=service)
@@ -107,7 +107,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 # Update with the path to your chromedriver file, if not on PATH
-chromedriver_path = "/Users/laurenperez/chromedriver-mac-arm64/chromedriver"
+chromedriver_path = "/Users/username/chromedriver-mac-arm64/chromedriver"
 
 # Start the browser session
 service = Service(executable_path=chromedriver_path)
