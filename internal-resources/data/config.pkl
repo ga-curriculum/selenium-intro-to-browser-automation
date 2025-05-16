@@ -12,9 +12,9 @@ import "microlessons.pkl" as mls
 
 repo {
   // This name is shown in the header nav to navigate users home
-  friendlyName = "Selenium: Getting Started with Browser Automation"
+  friendlyName = "Selenium: Intro to Browser Automation"
   // This must match the repo name as it appears on GitHub exactly
-  name = "selenium-getting-started-with-browser-automation"
+  name = "selenium-intro-to-browser-automation"
   type = "Lesson"
 }
 
