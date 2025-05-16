@@ -1,6 +1,6 @@
 <h1>
   <span class="prefix"></span>
-  <span class="headline">Introduction to Selenium</span>
+  <span class="headline">Selenium: Getting Started with Browser Automation</span>
 </h1>
 
 ## About
@@ -31,8 +31,8 @@ This module introduces learners to Selenium, a powerful open-source tool for aut
 
 ### Course landing pages
 
-- [PTR - Python Testing & Reliability](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/introduction-to-selenium/canvas-landing-pages/ptr.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/introduction-to-selenium/canvas-landing-pages/fallback.html)
+- [PTR - Python Testing & Reliability](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-getting-started-with-browser-automation/canvas-landing-pages/ptr.html)
+- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-getting-started-with-browser-automation/canvas-landing-pages/fallback.html)
 
 ### Resources
 

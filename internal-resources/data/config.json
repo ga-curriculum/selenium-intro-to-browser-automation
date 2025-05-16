@@ -4,8 +4,8 @@
     "name": "modular-curriculum-all-courses"
   },
   "repo": {
-    "friendlyName": "Introduction to Selenium",
-    "name": "introduction-to-selenium",
+    "friendlyName": "Selenium: Getting Started with Browser Automation",
+    "name": "selenium-getting-started-with-browser-automation",
     "type": "Lesson",
     "about": "",
     "starterCode": "",

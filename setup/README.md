@@ -1,5 +1,5 @@
 <h1>
-  <span class="headline">Introduction to Selenium</span>
+  <span class="headline">Selenium: Getting Started with Browser Automation</span>
   <span class="subhead">Setup</span>
 </h1>
 

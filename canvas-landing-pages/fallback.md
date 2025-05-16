@@ -1,7 +1,7 @@
 <!-- ! Do not delete or rename this file! -->
 <h1>
   <span class="prefix"></span>
-  <span class="headline">Introduction to Selenium</span>
+  <span class="headline">Selenium: Getting Started with Browser Automation</span>
 </h1>
 
 ## About
