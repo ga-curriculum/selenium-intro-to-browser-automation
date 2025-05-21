@@ -17,18 +17,7 @@ from selenium import webdriver
 
 This single line brings in the `webdriver` component. `webdriver` is what gives your code the power to “drive” a web browser, much like an operator using remote controls to steer a robot.
 
-Sometimes, you may also need the `Service` module to tell Selenium exactly where to find your browser driver (like ChromeDriver):
-
-```python
-from selenium.webdriver.chrome.service import Service
-```
-
 > 📚 A _module_ is a file containing Python code that can define functions, classes, and variables. Importing a module lets you use its features in your script.
-
-**Why do we import these?**
-
-- `webdriver`: This is Selenium’s bridge—from your code to your browser. Nearly every Selenium script starts by importing this.
-- `Service`: This helps launch and control the browser driver program, especially when it is not in a default system location.
 
 ## Initializing the webdriver
 
@@ -37,20 +26,12 @@ With your imports ready, the next step is to connect your script to a web browse
 Here’s how you typically create a new Chrome browser session:
 
 ```python
-# If chromedriver is on your PATH:
 driver = webdriver.Chrome()
-
-# If you need to specify the path to chromedriver:
-chromedriver_path = "/Users/username/chromedriver-mac-arm64/chromedriver"
-
-service = Service(executable_path=chromedriver_path)
-driver = webdriver.Chrome(service=service)
 ```
 
 **Breaking it down:**
 
 - `webdriver.Chrome()`: Launches a new browser window using Chrome.
-- The _service_ step is only necessary if your chromedriver file is not already part of your system’s PATH.
 
 ## Using `driver.get()` to navigate to a webpage
 
@@ -104,14 +85,8 @@ Let’s combine everything you’ve learned so far into a practical, working scr
 
 ```python
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
-# Update with the path to your chromedriver file, if not on PATH
-chromedriver_path = "/Users/username/chromedriver-mac-arm64/chromedriver"
-
-# Start the browser session
-service = Service(executable_path=chromedriver_path)
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 try:
     # Navigate to the Python.org homepage

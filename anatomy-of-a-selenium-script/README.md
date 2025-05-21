@@ -24,7 +24,6 @@ Basic imports:
 
 ```python
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 ```
 
 Here are some additional useful imports you'll see in future examples:
@@ -41,9 +40,7 @@ from selenium.webdriver.common.keys import Keys
 This is where you connect your script to Chrome (or another browser):
 
 ```python
-chromedriver_path = "/Users/yourname/path/to/chromedriver"
-service = Service(executable_path=chromedriver_path)
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 ```
 
 You can also add options (like headless mode or disabling logs) later.
@@ -124,15 +121,12 @@ Create a file called `test_local_form.py` and add:
 
 ```python
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-chromedriver_path = "/Users/yourname/path/to/chromedriver"  # update as needed
-service = Service(executable_path=chromedriver_path)
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 try:
-    driver.get("file:///Users/username/testing-with-selenium/form.html")  # update to your local file path
+    driver.get("file:///Users/username/path/to/example_file.html")  # Replace with the full absolute path to your local HTML file
 
     # Interact with the page
     driver.find_element(By.ID, "username").send_keys("Your Name")

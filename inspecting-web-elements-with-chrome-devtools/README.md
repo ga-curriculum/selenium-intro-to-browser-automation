@@ -167,17 +167,15 @@ Time to connect your inspection skills in DevTools to real Selenium scripting. Y
 
      ```python
      from selenium import webdriver
-     from selenium.webdriver.chrome.service import Service
 
-     service = Service(executable_path="/path/to/chromedriver")
-     driver = webdriver.Chrome(service=service)
+     driver = webdriver.Chrome()
 
      try:
-         driver.get("https://www.example.com")
-         search_input = driver.find_element("id", "search-bar")
-         search_input.send_keys("Selenium automation")
+     driver.get("https://www.example.com")
+     search_input = driver.find_element("id", "search-bar")
+     search_input.send_keys("Selenium automation")
      finally:
-         driver.quit()
+     driver.quit()
      ```
 
    - Adjust the code to match your chosen site and exact locator.

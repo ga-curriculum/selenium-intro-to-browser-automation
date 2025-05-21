@@ -144,34 +144,90 @@ You should now have a file named `chromedriver` (or `chromedriver.exe` on Window
 
 ### 4. Tell Selenium where to find ChromeDriver
 
-There are **two options** here:
+Selenium needs ChromeDriver to control the Chrome browser. After downloading it, you’ll need to unzip the file and add ChromeDriver to your system `PATH` so that Selenium can find it.
 
-#### Option A (Recommended for beginners): Use the full path in your code
+## Add ChromeDriver to your PATH
 
-In your Selenium script, specify the path to the driver like this:
+**🖥 For macOS:**
 
-```python
-from selenium import webdriver
+1. Locate your downloaded file:
 
-driver = webdriver.Chrome(executable_path="/path/to/chromedriver")
+You’ll see a file like this in your Downloads folder `chromedriver_mac64.zip`
+
+2. Unzip the file:
+
+You can double-click it in Finder or use this command in Terminal.
+
+```bash
+unzip ~/Downloads/chromedriver_mac64.zip
 ```
 
-Replace `/path/to/chromedriver` with the actual full path on your system, such as:
+3. Move the binary to a system directory:
 
-- Windows: `"C:\\chromedriver\\chromedriver.exe"`
-- macOS: `"/Users/yourname/Downloads/chromedriver"`
+Inside the unzipped `chromedriver_mac64` directory you will find another directory called `chromedriver`. This is your binry file that needs to be moved to your PATH.
 
-> 🔐 Note: Always use **double backslashes `\\` on Windows** or raw string literals.
+```bash
+cd chromedriver_mac64
+sudo mv chromedriver /usr/local/bin/chromedriver
+sudo chmod +x /usr/local/bin/chromedriver
+```
 
-#### Option B (Optional for advanced users): Add ChromeDriver to your system PATH
+4. Verify it’s available:
 
-If you want to avoid specifying the path every time:
+```bash
+chromedriver --version
+```
 
-- **Windows**: Add the folder to your **Environment Variables → Path**
-- **macOS/Linux**: Move `chromedriver` to `/usr/local/bin/`:
+You should see output like:
+
+```bash
+ChromeDriver 120.0.6099.109 ...
+```
+
+**🖥 For Windows**
+
+1. Find your download:
+
+You should see a file like `chromedriver_win32.zip`
+
+2. Unzip the file:
+
+- Right-click the `.zip` file and choose `Extract All`.
+
+- Open the extracted folder. You should now see a file `chromedriver.exe`
+
+3. Move the file to a permanent location, such as:
+
+```bash
+C:\chromedriver
+```
+
+5. Add it to your `PATH`:
+
+   - Open Start and search for **Environment Variables**
+   - Click **"Edit the system environment variables"**
+   - In the System Properties window, click **"Environment Variables..."**
+   - Under **System variables**, select **Path** and click **Edit**
+   - Click **New** and enter:
+     ```bash
+     C:\chromedriver
+     ```
+   - Click **OK** to save and close all dialogs
+
+6. Verify it's working:
+
+- Open Command Prompt
+
+  Run:
 
   ```bash
-  sudo mv chromedriver /usr/local/bin/
+  chromedriver --version
+  ```
+
+  You should see:
+
+  ```bash
+  ChromeDriver 120.0.6099.109 ...
   ```
 
 Once in your PATH, you can launch Selenium without specifying the path:
@@ -180,17 +236,27 @@ Once in your PATH, you can launch Selenium without specifying the path:
 driver = webdriver.Chrome()
 ```
 
----
+### Alternative Option (Not Recommended): Use the full path in your scripts
 
-### 🛠 Common Issues
+If you don’t want to update your system PATH or are unable to do so, you can point directly to the ChromeDriver executable in your test files, but will need to remember to include this setup each time:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
+service = Service(executable_path="/your/local/path/to/chromedriver")
+driver = webdriver.Chrome(service=service)
+```
+
+> Without this code at the top of all your test files selenium will not be able to locate the driver.
+
+## 🛠 Common Issues
 
 - ❌ **Version mismatch**: Always check that Chrome and ChromeDriver versions match
 - ❌ **Permission denied** (macOS/Linux): Use `chmod +x chromedriver` to make it executable
 - ❌ **PATH not set**: Use Option A and specify the full path instead of relying on PATH
 
 > ✅ Once this is working, you’re ready to launch a browser with Selenium!
-
----
 
 ## Verifying successful installation
 
@@ -204,39 +270,14 @@ Add this code:
 
 ```python
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-
-# 👇 Replace this with the full path to your ChromeDriver
-chromedriver_path = "/path/to/chromedriver"
-
-service = Service(executable_path=chromedriver_path)
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 driver.get("https://www.python.org")  # Opens the Python website
 
 driver.quit()  # Closes the browser
 ```
 
-3. Update the `chromedriver_path` line with the **actual full path** to your ChromeDriver:
-
-- **Windows** example:
-
-  ```python
-  chromedriver_path = "C:\\chromedriver\\chromedriver.exe"
-  ```
-
-- **macOS/Linux** example:
-  ```python
-  chromedriver_path = "/Users/yourname/Downloads/chromedriver"
-  ```
-
-> 💡 Tip: If ChromeDriver is already in your system PATH, you can skip the `Service` setup and just write:
->
-> ```python
-> driver = webdriver.Chrome()
-> ```
-
-5. Run the script
+3. Run the script
 
 Save and then run your script in the terminal:
 
