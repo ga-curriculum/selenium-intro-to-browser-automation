@@ -31,8 +31,8 @@ This module introduces learners to Selenium, a powerful open-source tool for aut
 
 ### Course landing pages
 
-- [PTR - Python Testing & Reliability](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-intro-to-browser-automation/canvas-landing-pages/ptr.html)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/selenium-intro-to-browser-automation/canvas-landing-pages/fallback.html)
+- [PTR - Python Testing & Reliability](https://ga-curriculum.github.io/selenium-intro-to-browser-automation/canvas-landing-pages/ptr.html)
+- [Fallback](https://ga-curriculum.github.io/selenium-intro-to-browser-automation/canvas-landing-pages/fallback.html)
 
 ### Resources
 
@@ -44,4 +44,4 @@ This module introduces learners to Selenium, a powerful open-source tool for aut
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://ga-curriculum.github.io/universal-resources-internal/module-feedback.html)!**
